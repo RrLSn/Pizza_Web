@@ -1,0 +1,11 @@
+.wrapper{
+    @apply w-full h-[83vh] flex flex-col justify-center items-center text-center
+}
+
+.wrapper h1{
+    @apply text-3xl font-bold
+}
+
+.wrapper button{
+    @apply w-[8vw] h-[5vh] rounded-full border-2 my-5
+}
