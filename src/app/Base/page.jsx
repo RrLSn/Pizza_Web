@@ -10,6 +10,7 @@ const page = () => {
     const handleShowBaseClick = () => {
         setShowBase(!showBase)
     }
+
   return (
     <div className={styles.wrapper}>
         <h1 onClick={handleShowBaseClick}>Select a Base for your Pizza</h1>
@@ -17,12 +18,15 @@ const page = () => {
         <section className='my-10 w-[50vw] h-[max-content] flex flex-wrap gap-7 justify-center items-center py-2'>
             {
                 showBase && 
-                BaseListDatas.map((data) => (
-                    <BaseList
+                BaseListDatas.map((data,index) => (
+                    <div key={data.id}>
+                        <BaseList
                         imgUrl={data.imgeUrl} 
                         name={data.baseName}
                         baseUrl={data.baseUrl}
-                    />
+                        params={index}
+                        />
+                    </div>
                 ))
             }
         </section>
