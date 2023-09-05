@@ -5,7 +5,3 @@
 .wrapper h1{
     @apply border-b w-[15vw] pb-2
 }
-
-.hover:hover{
-    @apply flex
-}
