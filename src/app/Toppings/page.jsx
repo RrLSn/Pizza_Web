@@ -4,12 +4,10 @@ import styles from '@/styles/Toppings.module.css'
 import { Toppings, baseSelected } from '@/data'
 import ToppingsList from '@/components/ToppingsList'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 
 const page = () => {
 
   const [selectedToppings, setSelectedToppings] = useState([])
-  const router = useRouter()
 
   const handleListClicked = (list) => {
     if(selectedToppings.includes(list)){
@@ -42,7 +40,7 @@ const page = () => {
         </ul>
       </main>
 
-      <Link href={`/confirmation?selectedToppings=${selectedToppings.join(',')}`} as={`/Confirmation`}><button  className='w-[6rem] h-[3rem] m-auto'>Next</button></Link>
+      <Link href={`/Confirmation?selectedToppings=${JSON.stringify(selectedToppings)}`} as={`/Confirmation`}><button  className='w-[6rem] h-[3rem] m-auto'>Next</button></Link>
     </div>
   )
 }

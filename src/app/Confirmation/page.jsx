@@ -4,8 +4,11 @@ import React from 'react'
 
 const page = () => {
   const router = useRouter()
-  const list = router.query
-  console.log(list)
+  const {testParam} = router.query
+
+  const selectedToppingsArray = selectedToppings ? JSON.parse(selectedToppings) : [];
+  console.log(testParam)
+
   return (
     <div>Confirmation</div>
   )
