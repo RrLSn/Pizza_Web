@@ -7,8 +7,14 @@ import Link from "next/link";
 
 const page = () => {
   const [selectedToppings, setSelectedToppings] = useState([]);
+  const [isSelected, setIsSelected] = useState(false);
+  sessionStorage.setItem("selectedItems", JSON.stringify(selectedToppings));
+  sessionStorage.setItem("isSelected", JSON.stringify(isSelected));
+
+  console.log(isSelected);
 
   const handleListClicked = (list) => {
+    setIsSelected(true);
     if (selectedToppings.includes(list)) {
       return setSelectedToppings(
         selectedToppings.filter((newList) => newList !== list)
@@ -36,10 +42,13 @@ const page = () => {
       </main>
 
       <Link
-        href={`/Confirmation`}
-        as={`/Confirmation?selectedToppings=${JSON.stringify(
-          selectedToppings
-        )}`}
+        href={{
+          pathname: "/Confirmation",
+          query: { selectedToppings: selectedToppings.join(",") },
+        }}
+        // as={`/Confirmation?selectedToppings=${JSON.stringify(
+        //   selectedToppings
+        // )}`}
       >
         <button className="w-[8rem] h-[3rem] m-auto border rounded-full mt-4 hover:text-red-200 hover:border-red-200">
           Next
