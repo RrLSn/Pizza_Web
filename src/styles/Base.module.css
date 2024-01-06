@@ -1,11 +1,11 @@
-.wrapper{
-    @apply w-full h-[83vh] flex flex-col justify-center items-center
+.wrapper {
+  @apply w-full h-[83vh] flex flex-col justify-center items-center;
 }
 
-.wrapper h1{
-    @apply border-b w-[15vw] cursor-pointer pb-2
+.wrapper h1 {
+  @apply border-b w-[15vw] cursor-pointer pb-2;
 }
 
-.base{
-    @apply my-10
+.base {
+  @apply my-10;
 }

@@ -10,8 +10,7 @@ const page = () => {
   const [isSelected, setIsSelected] = useState(false);
   sessionStorage.setItem("selectedItems", JSON.stringify(selectedToppings));
   sessionStorage.setItem("isSelected", JSON.stringify(isSelected));
-
-  console.log(isSelected);
+  const selectedBase = JSON.parse(sessionStorage.getItem("SelectedBase"));
 
   const handleListClicked = (list) => {
     setIsSelected(true);
@@ -28,7 +27,7 @@ const page = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h1>Add Toppings</h1>
+      <h1>Add Toppings for {selectedBase}</h1>
       <h2></h2>
 
       <main>
