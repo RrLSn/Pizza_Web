@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import styles from "@/styles/Confirmation.module.css";
+import Link from "next/link";
 
 const page = () => {
   const storedItems = sessionStorage.getItem("selectedItems");
@@ -14,11 +15,16 @@ const page = () => {
           {isSelected ? (
             <div>
               <h1>Your Order</h1>
-              <h2>Base Selected: {selectedBase}</h2>
-              <h2>Toppings Selected: </h2>
-              {selectedToppings.map((toppings, index) => (
-                <li key={index}>{toppings}</li>
-              ))}
+              <div className={styles.order}>
+                <h2>Base Selected:</h2>
+                <p>{selectedBase}</p>
+              </div>
+              <div className={styles.order}>
+                <h2>Toppings Selected: </h2>
+                {selectedToppings.map((toppings, index) => (
+                  <li key={index}>{toppings}</li>
+                ))}
+              </div>
             </div>
           ) : (
             <p>
@@ -31,15 +37,11 @@ const page = () => {
 
       <div>
         {isSelected ? (
-          <div>
-            <button onClick={() => (window.location = "/")}>
-              Confirm Order
-            </button>
-          </div>
+          <button onClick={() => (window.location = "/")}>Confirm Order</button>
         ) : (
-          <div>
-            <button disabled="true">Previous Page</button>
-          </div>
+          <button disabled="true">
+            <Link href={`/Toppings`}>Previous Page</Link>
+          </button>
         )}
       </div>
     </div>

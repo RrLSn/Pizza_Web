@@ -22,7 +22,6 @@ const page = () => {
               <BaseList
                 imgUrl={data.imgeUrl}
                 name={data.baseName}
-                baseUrl={data.baseUrl}
                 params={index}
               />
             </div>

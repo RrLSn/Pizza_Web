@@ -1,13 +1,13 @@
 .wrapper {
-  @apply w-full h-[83vh] flex flex-col text-center py-32 space-x-12;
+  @apply w-full h-[83vh] flex flex-col text-center py-32;
 }
 
 .wrapper h1 {
-  @apply text-3xl font-bold my-2;
+  @apply text-3xl font-bold my-2 tracking-wider;
 }
 
-.wrapper h2 {
-  @apply mb-2;
+.order h2 {
+  @apply my-2 font-bold;
 }
 
 .wrapper button {

@@ -45,9 +45,6 @@ const page = () => {
           pathname: "/Confirmation",
           query: { selectedToppings: selectedToppings.join(",") },
         }}
-        // as={`/Confirmation?selectedToppings=${JSON.stringify(
-        //   selectedToppings
-        // )}`}
       >
         <button className="w-[8rem] h-[3rem] m-auto border rounded-full mt-4 hover:text-red-200 hover:border-red-200">
           Next
