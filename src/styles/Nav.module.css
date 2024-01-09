@@ -1,0 +1,12 @@
+.nav {
+  background: url(/Media/Nav_bg.jpg);
+  @apply w-[25vw] h-[100vh] text-[#fdf6eb] flex justify-center items-center;
+}
+
+.main {
+  @apply w-[30vh] h-[50vh] flex flex-col justify-center text-center items-center font-semibold text-2xl;
+}
+
+.link {
+  @apply no-underline focus:text-[#fab940] hover:underline hover:text-[#fab940];
+}

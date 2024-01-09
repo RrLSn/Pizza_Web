@@ -1,11 +1,19 @@
 .wrapper {
-  @apply w-full h-[83vh] flex flex-col justify-center items-center text-center;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  background: url(/Media/Pizza.jpg);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @apply w-full h-[100vh] text-[#fdf6eb];
 }
 
-.wrapper h1 {
+.main {
+}
+
+.main h1 {
   @apply text-3xl font-bold;
 }
 
-.wrapper button {
+.main button {
   @apply w-[8vw] h-[5vh] rounded-full border-2 my-5 hover:border-red-200 hover:text-red-200;
 }
