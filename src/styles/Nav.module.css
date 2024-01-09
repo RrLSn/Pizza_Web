@@ -4,9 +4,9 @@
 }
 
 .main {
-  @apply w-[30vh] h-[50vh] flex flex-col justify-center text-center items-center font-semibold text-2xl;
+  @apply w-[30vh] h-[50vh] flex flex-col justify-center text-center items-center font-semibold text-2xl gap-y-[0.50rem];
 }
 
 .link {
-  @apply no-underline focus:text-[#fab940] hover:underline hover:text-[#fab940];
+  @apply focus:text-[#fab940] hover:underline hover:text-[#fab940] focus:underline active:underline active:text-[#fab940];
 }

@@ -9,11 +9,14 @@ const NavBar = () => {
       <div className={styles.main}>
         <div className={styles.logo}>Logo</div>
         <div className={styles.main}>
-          <Link href="" className={styles.link}>
+          <Link href="/Intro" className={styles.link}>
             HOME
           </Link>
-          <Link href="" className={styles.link}>
+          <Link href="/Base" className={styles.link}>
             MENU
+          </Link>
+          <Link href="" className={styles.link}>
+            ORDER
           </Link>
           <Link href="" className={styles.link}>
             CONTACT US

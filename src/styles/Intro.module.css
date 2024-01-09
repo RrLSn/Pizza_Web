@@ -1,19 +1,24 @@
 .wrapper {
-  /* font-family: Arial, Helvetica, sans-serif; */
-  background: url(/Media/Pizza.jpg);
+  /* font-family: Arial, Helvetica; */
+  background: url(/Media/slider1.webp);
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  @apply w-full h-[100vh] text-[#fdf6eb];
+  @apply w-full h-[100vh] text-[#fdf6eb] flex flex-col justify-center items-center;
 }
 
 .main {
+  @apply w-[35rem] text-6xl font-bold flex flex-col;
 }
 
-.main h1 {
-  @apply text-3xl font-bold;
-}
-
-.main button {
+/* .main button {
   @apply w-[8vw] h-[5vh] rounded-full border-2 my-5 hover:border-red-200 hover:text-red-200;
+} */
+
+.pizza {
+  @apply w-[18rem] h-[6rem] bg-[#242424] flex justify-center items-center rounded-lg text-7xl;
+}
+
+.pizza h1 {
+  @apply font-bold text-[#fab940];
 }

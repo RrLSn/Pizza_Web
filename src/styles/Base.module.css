@@ -1,5 +1,10 @@
 .wrapper {
-  @apply w-full h-[83vh] flex flex-col justify-center items-center;
+  /* font-family: Arial, Helvetica; */
+  background: url(/Media/slider2.webp);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @apply w-full h-[100vh] flex flex-col justify-center items-center;
 }
 
 .wrapper h1 {

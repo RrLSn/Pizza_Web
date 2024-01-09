@@ -6,16 +6,16 @@ const page = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.main}>
-        <h1>WELCOME</h1>
-        <h1>WE OFFER THE BEST</h1>
-        <div>
-          <h1>PIZZA</h1>
+        <h1>Welcome,</h1>
+        <h1>we offer the Best</h1>
+        <div className={styles.pizza}>
+          <h1>Pizza</h1>
         </div>
-        <h1>IN TOWN</h1>
+        <h1>in Town</h1>
       </div>
-      <Link href="/Base">
+      {/* <Link href="/Base">
         <button>Place Order</button>
-      </Link>
+      </Link> */}
     </div>
   );
 };
