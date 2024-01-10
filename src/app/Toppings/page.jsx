@@ -23,8 +23,6 @@ const page = () => {
     }
   };
 
-  console.log(selectedToppings);
-
   return (
     <div className={styles.wrapper}>
       <section className={styles.mainSection}>
@@ -37,7 +35,11 @@ const page = () => {
           <ul>
             {Toppings.map((list, index) => (
               <li key={index} onClick={() => handleListClicked(list.name)}>
-                <ToppingsList topping={list.name} params={list.id} />
+                <ToppingsList
+                  topping={list.name}
+                  params={list.id}
+                  price={list.price}
+                />
               </li>
             ))}
           </ul>

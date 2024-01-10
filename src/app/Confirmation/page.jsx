@@ -15,7 +15,9 @@ const page = () => {
           <ul>
             {isSelected ? (
               <div>
-                <h1>Your Order</h1>
+                <h1 className="underline underline-offset-4 text-3xl font-bold pb-2 text-[#fab940]">
+                  Your Order
+                </h1>
                 <div className={styles.order}>
                   <h2>Base Selected:</h2>
                   <p>{selectedBase}</p>
