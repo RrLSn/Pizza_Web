@@ -27,29 +27,33 @@ const page = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h1>Add Toppings for {selectedBase}</h1>
-      <h2></h2>
+      <section className={styles.mainSection}>
+        <h1 className="underline underline-offset-4 text-3xl font-bold pb-2 text-[#fab940]">
+          Add Toppings for {selectedBase}
+        </h1>
+        <h2></h2>
 
-      <main>
-        <ul>
-          {Toppings.map((list, index) => (
-            <li key={index} onClick={() => handleListClicked(list.name)}>
-              <ToppingsList topping={list.name} params={list.id} />
-            </li>
-          ))}
-        </ul>
-      </main>
+        <main className="w-[25vw] h-[max-content]">
+          <ul>
+            {Toppings.map((list, index) => (
+              <li key={index} onClick={() => handleListClicked(list.name)}>
+                <ToppingsList topping={list.name} params={list.id} />
+              </li>
+            ))}
+          </ul>
+        </main>
 
-      <Link
-        href={{
-          pathname: "/Confirmation",
-          query: { selectedToppings: selectedToppings.join(",") },
-        }}
-      >
-        <button className="w-[8rem] h-[3rem] m-auto border rounded-full mt-4 hover:text-red-200 hover:border-red-200">
-          Next
+        <button className="w-[8rem] h-[3rem] m-auto border rounded-full mt-4 text-[#fab940] border-[#fab940] hover:border-[#daa23b] hover:text-[#daa23b]">
+          <Link
+            href={{
+              pathname: "/Confirmation",
+              query: { selectedToppings: selectedToppings.join(",") },
+            }}
+          >
+            Next
+          </Link>
         </button>
-      </Link>
+      </section>
     </div>
   );
 };

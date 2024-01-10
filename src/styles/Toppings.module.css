@@ -1,7 +1,10 @@
 .wrapper {
-  @apply w-full h-[83vh] flex flex-col justify-center items-center;
+  background: url(/Media/slider3.webp);
+  background-position: 100% 100%;
+  background-size: cover;
+  @apply w-full h-[100vh] text-black flex flex-col justify-center items-center text-center;
 }
 
-.wrapper h1 {
-  @apply border-b w-[max-content] pb-2;
+.mainSection {
+  @apply w-[45vw] h-[max-content] bg-[#fdf6eb] flex flex-col justify-center items-center text-center py-10 px-10 gap-y-2;
 }

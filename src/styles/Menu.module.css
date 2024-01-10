@@ -1,0 +1,18 @@
+.wrapper {
+  @apply w-full h-[100vh];
+}
+
+.wallpaper {
+  background: url(/Media/slider2.webp);
+  background-size: cover;
+  /* background-position: 100% 100%; */
+  @apply w-full h-[13rem] flex items-end pl-6;
+}
+
+.pizza {
+  @apply w-[15vw] h-[10vh] bg-[#242424] flex items-center text-5xl text-[#fdf6eb] gap-x-2;
+}
+
+.main {
+  @apply w-full h-[74vh];
+}

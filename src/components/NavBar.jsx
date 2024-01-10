@@ -12,10 +12,10 @@ const NavBar = () => {
           <Link href="/Intro" className={styles.link}>
             HOME
           </Link>
-          <Link href="/Base" className={styles.link}>
+          <Link href="/Menu" className={styles.link}>
             MENU
           </Link>
-          <Link href="" className={styles.link}>
+          <Link href="/Base" className={styles.link}>
             ORDER
           </Link>
           <Link href="" className={styles.link}>

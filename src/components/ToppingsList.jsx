@@ -20,7 +20,7 @@ const ToppingsList = (props) => {
   return (
     <div className="flex my-4 gap-2 px-5 w-[17vw] cursor-pointer">
       <Image
-        src="/svgs/Greater.svg"
+        src="/svgs/arrow-right-line.svg"
         height={30}
         width={10}
         alt="sign"
@@ -28,7 +28,7 @@ const ToppingsList = (props) => {
         className={isHovered ? "block" : "hidden"}
       />
       <p
-        className="hover:text-red-200"
+        className="hover:text-[#daa23b]"
         onMouseEnter={handleHover}
         onMouseLeave={handleHoverLeave}
       >
