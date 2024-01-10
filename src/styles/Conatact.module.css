@@ -1,0 +1,14 @@
+.wrapper {
+  background: url(/Media/slider3.webp);
+  background-position: 100% 100%;
+  background-size: cover;
+  @apply w-full h-[100vh] flex flex-col justify-center;
+}
+
+.pizza {
+  @apply w-[16vw] h-[10vh] bg-[#242424] flex items-center text-4xl text-[#fdf6eb] gap-x-2 ml-8;
+}
+
+.main {
+  @apply w-[70%] h-[70%] bg-[#fcf6ec];
+}

@@ -21,14 +21,20 @@ const NavBar = () => {
         <Link href="/Base" className={styles.link}>
           ORDER
         </Link>
-        <Link href="" className={styles.link}>
+        <Link href="/Contact" className={styles.link}>
           CONTACT US
         </Link>
         <Link href="" className={styles.link}>
           ABOUT
         </Link>
       </div>
-      <footer></footer>
+      <footer className={styles.footer}>
+        <div className="w-[15vw] h-[0.5vh] bg-[#fab940]"></div>
+        <div>
+          <p></p>
+          <p></p>
+        </div>
+      </footer>
     </nav>
   );
 };

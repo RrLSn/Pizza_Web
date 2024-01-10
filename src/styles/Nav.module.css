@@ -18,3 +18,7 @@
 .link {
   @apply focus:text-[#fab940] hover:underline hover:underline-offset-4 hover:text-[#fab940] focus:underline focus:underline-offset-4 active:underline active:underline-offset-4 active:text-[#fab940];
 }
+
+.footer {
+  @apply mt-14;
+}
