@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
-        <div className="absolute z-20 w-[10vw] h-[4vh] bg-[#242424] flex text-center justify-center items-center font-bold text-2xl">
+        <div className="absolute z-20 w-[10vw] h-[4vh] bg-[#fab940] flex text-center justify-center items-center font-bold text-2xl text-black">
           PIZZA HOME
         </div>
       </div>

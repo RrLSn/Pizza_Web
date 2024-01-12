@@ -10,5 +10,13 @@
 }
 
 .main {
-  @apply w-[60vw] h-[80%] bg-[#fcf6ec] flex justify-between py-10 px-10;
+  @apply w-[60vw] h-[80%] bg-[#fcf6ec] py-16 px-16 overflow-y-scroll;
+}
+
+.main section h1 {
+  @apply text-3xl font-bold my-4;
+}
+
+.image {
+  @apply m-auto mb-[4rem] mt-[2rem];
 }
