@@ -56,7 +56,7 @@ const page = () => {
             ></textarea>
           </div>
           <div className={styles.button}>
-            <button></button>
+            <button>SEND MESSAGE</button>
           </div>
         </div>
       </main>
