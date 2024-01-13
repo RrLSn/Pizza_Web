@@ -10,7 +10,7 @@
 }
 
 .pizza {
-  @apply w-[15vw] h-[10vh] bg-[#242424] flex items-center text-5xl text-[#fdf6eb] gap-x-2;
+  @apply w-[18vw] h-[10vh] bg-[#242424] flex items-center text-5xl text-[#fdf6eb] gap-x-4;
 }
 
 .main {

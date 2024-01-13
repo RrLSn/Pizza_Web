@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "@/styles/Conatact.module.css";
+import Image from "next/image";
 
 const page = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.pizza}>
         <div className="w-[0.5vw] h-[100%] bg-[#fab940]"></div>
+        <Image src="/svgs/pizza.svg" alt="Pizza" width={40} height={40}></Image>
         <h1>CONTACT US</h1>
       </div>
       <main className={styles.main}>

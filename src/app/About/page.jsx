@@ -7,6 +7,7 @@ const page = () => {
     <div className={styles.wrapper}>
       <div className={styles.pizza}>
         <div className="w-[0.5vw] h-[100%] bg-[#fab940]"></div>
+        <Image src="/svgs/pizza.svg" alt="Pizza" width={40} height={40}></Image>
         <h1>ABOUT US</h1>
       </div>
       <main className={styles.main}>

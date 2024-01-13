@@ -6,7 +6,7 @@
 }
 
 .pizza {
-  @apply w-[16vw] h-[10vh] bg-[#242424] flex items-center text-4xl text-[#fdf6eb] gap-x-2 ml-8;
+  @apply w-[19vw] h-[10vh] bg-[#242424] flex items-center text-4xl text-[#fdf6eb] gap-x-6 ml-8;
 }
 
 .main {
