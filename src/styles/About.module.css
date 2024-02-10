@@ -5,18 +5,24 @@
   @apply w-full h-[100vh] flex flex-col justify-center;
 }
 
+.image {
+  background-image: url(/svgs/pizza.svg);
+  background-size: cover;
+  @apply lg:w-[4rem] w-[1.7rem] lg:h-[4rem] h-[1.7rem];
+}
+
 .pizza {
-  @apply w-[19vw] h-[10vh] bg-[#242424] flex items-center text-4xl text-[#fdf6eb] gap-x-6 ml-8;
+  @apply lg:w-[19vw] w-[35vw] lg:h-[10vh] h-[5vh] bg-[#242424] flex items-center lg:text-4xl text-[#fdf6eb] lg:gap-x-6 gap-x-2 lg:ml-8 ml-4;
 }
 
 .main {
-  @apply w-[60vw] h-[80%] bg-[#fcf6ec] py-16 px-16 overflow-y-scroll;
+  @apply w-[60vw] h-[80%] bg-[#fcf6ec] lg:py-16 px-5 lg:px-16 overflow-y-scroll;
 }
 
 .main section h1 {
-  @apply text-3xl font-bold my-4;
+  @apply lg:text-3xl text-2xl font-bold my-4;
 }
 
-.image {
+.imaage {
   @apply m-auto mb-[4rem] mt-[2rem];
 }

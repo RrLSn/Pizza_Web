@@ -4,19 +4,15 @@
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  @apply w-full h-[100vh] text-[#fcf6ec] flex flex-col justify-center items-center;
+  @apply lg:w-full w-[80vw] h-[100vh] text-[#fcf6ec] flex flex-col justify-center items-center;
 }
 
 .main {
-  @apply w-[35rem] text-6xl font-bold flex flex-col;
+  @apply w-[35rem] lg:text-6xl text-3xl font-bold flex flex-col lg:ml-0 ml-[15rem];
 }
 
-/* .main button {
-  @apply w-[8vw] h-[5vh] rounded-full border-2 my-5 hover:border-red-200 hover:text-red-200;
-} */
-
 .pizza {
-  @apply w-[18rem] h-[6rem] bg-[#242424] flex justify-center items-center rounded-lg text-7xl;
+  @apply lg:w-[18rem] w-[10rem] lg:h-[6rem] h-[3rem] bg-[#242424] flex justify-center items-center rounded-lg lg:text-7xl text-3xl;
 }
 
 .pizza h1 {

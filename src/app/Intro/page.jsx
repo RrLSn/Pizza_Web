@@ -13,9 +13,6 @@ const page = () => {
         </div>
         <h1>in Town</h1>
       </div>
-      {/* <Link href="/Base">
-        <button>Place Order</button>
-      </Link> */}
     </div>
   );
 };

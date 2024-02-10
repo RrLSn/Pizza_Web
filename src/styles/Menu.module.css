@@ -9,8 +9,14 @@
   @apply w-full h-[13rem] flex items-end pl-6;
 }
 
+.image {
+  background-image: url(/svgs/pizza.svg);
+  background-size: cover;
+  @apply lg:w-[4rem] w-[1.7rem] lg:h-[4rem] h-[1.7rem];
+}
+
 .pizza {
-  @apply w-[18vw] h-[10vh] bg-[#242424] flex items-center text-5xl text-[#fdf6eb] gap-x-4;
+  @apply lg:w-[18vw] w-[25vw] lg:h-[10vh] h-[6vh] bg-[#242424] flex items-center lg:text-5xl text-[#fdf6eb] lg:gap-x-4 gap-x-2;
 }
 
 .main {

@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.logo}>
-        <div className="absolute z-20 w-[10vw] h-[4vh] bg-[#fab940] flex text-center justify-center items-center font-bold text-2xl text-black">
+        <div className="absolute z-20 lg:w-[10vw] w-[30vw] h-[4vh] bg-[#fab940] flex text-center justify-center items-center font-bold lg:text-2xl text-black">
           PIZZA HOME
         </div>
       </div>
@@ -28,7 +28,7 @@ const NavBar = () => {
         </Link>
       </div>
       <footer className={styles.footer}>
-        <div className="w-[15vw] h-[0.5vh] bg-[#fab940]"></div>
+        <div className="lg:w-[15vw] w-[28vw] h-[0.5vh] bg-[#fab940]"></div>
         <div>
           <p></p>
           <p></p>
