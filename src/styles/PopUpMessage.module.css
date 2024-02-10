@@ -1,5 +1,5 @@
 .wrapper {
-  @apply w-[55vw] h-[65vh] bg-white fixed z-10 flex flex-col items-center  justify-center;
+  @apply w-[55vw] h-[65vh] bg-[#fdf6eb] fixed z-10 flex flex-col items-center  justify-center;
 }
 
 .image {
