@@ -13,9 +13,6 @@
   @apply w-[55vw] h-[max-content] bg-[#fdf6eb] flex flex-col justify-center items-center text-center py-10 px-10;
 }
 
-.orderList {
-}
-
 .order h2 {
   @apply my-2 font-bold;
 }

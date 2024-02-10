@@ -8,9 +8,23 @@ import Link from "next/link";
 const SelectedToppings = () => {
   const [selectedToppings, setSelectedToppings] = useState([]);
   const [isSelected, setIsSelected] = useState(false);
-  sessionStorage.setItem("selectedItems", JSON.stringify(selectedToppings));
-  sessionStorage.setItem("isSelected", JSON.stringify(isSelected));
-  const selectedBase = JSON.parse(sessionStorage.getItem("SelectedBase"));
+  // isSessionStorage
+  //   ? sessionStorage.setItem("selectedItems", JSON.stringify(selectedToppings))
+  //   : false;
+  // isSessionStorage
+  //   ? sessionStorage.setItem("isSelected", JSON.stringify(isSelected))
+  //   : false;
+  // const selectedBase = isSessionStorage
+  //   ? JSON.parse(sessionStorage.getItem("SelectedBase"))
+  //   : null;
+
+  if (typeof sessionStorage !== "undefined") {
+    // sessionStorage is available, you can use it safely
+    // Example: sessionStorage.setItem('key', 'value');
+  } else {
+    // Handle the case where sessionStorage is not available
+    console.log("sessionStorage is not available in this environment.");
+  }
 
   const handleListClicked = (list) => {
     setIsSelected(true);

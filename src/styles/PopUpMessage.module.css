@@ -1,0 +1,3 @@
+.wrapper {
+  @apply w-[55vw] h-[60vh] bg-black fixed z-10;
+}
