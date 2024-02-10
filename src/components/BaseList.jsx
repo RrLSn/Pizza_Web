@@ -6,7 +6,12 @@ const BaseList = (props) => {
   const { imgUrl, name } = props;
 
   const [selectedBase, setSelectedBase] = useState([]);
-  sessionStorage.setItem("SelectedBase", JSON.stringify(selectedBase));
+
+  // if (typeof sessionStorage !== "undefined") {
+  //   sessionStorage.setItem("SelectedBase", JSON.stringify(selectedBase));
+  // } else {
+  //   console.log("sessionStorage is not available in this environment.");
+  // }
 
   const handleBaseClicked = () => {
     setSelectedBase(name);

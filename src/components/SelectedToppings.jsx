@@ -18,14 +18,6 @@ const SelectedToppings = () => {
   //   ? JSON.parse(sessionStorage.getItem("SelectedBase"))
   //   : null;
 
-  if (typeof sessionStorage !== "undefined") {
-    // sessionStorage is available, you can use it safely
-    // Example: sessionStorage.setItem('key', 'value');
-  } else {
-    // Handle the case where sessionStorage is not available
-    console.log("sessionStorage is not available in this environment.");
-  }
-
   const handleListClicked = (list) => {
     setIsSelected(true);
     if (selectedToppings.includes(list)) {
