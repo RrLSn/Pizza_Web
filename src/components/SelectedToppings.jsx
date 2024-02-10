@@ -8,6 +8,16 @@ import Link from "next/link";
 const SelectedToppings = () => {
   const [selectedToppings, setSelectedToppings] = useState([]);
   const [isSelected, setIsSelected] = useState(false);
+  const isSessionStorageAvailable =
+    typeof window !== "undefined" && window.sessionStorage;
+  if (isSessionStorageAvailable) {
+    sessionStorage.setItem("selectedItems", JSON.stringify(selectedToppings));
+    sessionStorage.setItem("isSelected", JSON.stringify(isSelected));
+  }
+
+  const selectedBase = isSessionStorageAvailable
+    ? JSON.parse(sessionStorage.getItem("selectedBase"))
+    : null;
   // isSessionStorage
   //   ? sessionStorage.setItem("selectedItems", JSON.stringify(selectedToppings))
   //   : false;

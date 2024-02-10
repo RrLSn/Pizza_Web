@@ -1,17 +1,14 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 const BaseList = (props) => {
   const { imgUrl, name } = props;
 
   const [selectedBase, setSelectedBase] = useState([]);
-
-  // if (typeof sessionStorage !== "undefined") {
-  //   sessionStorage.setItem("SelectedBase", JSON.stringify(selectedBase));
-  // } else {
-  //   console.log("sessionStorage is not available in this environment.");
-  // }
+  useEffect(() => {
+    sessionStorage.setItem("SelectedBase", JSON.stringify(selectedBase));
+  }, [selectedBase]);
 
   const handleBaseClicked = () => {
     setSelectedBase(name);
