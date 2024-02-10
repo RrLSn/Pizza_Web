@@ -10,6 +10,8 @@ const BaseList = (props) => {
     sessionStorage.setItem("SelectedBase", JSON.stringify(selectedBase));
   }, [selectedBase]);
 
+  console.log(selectedBase);
+
   const handleBaseClicked = () => {
     setSelectedBase(name);
   };

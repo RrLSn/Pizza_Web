@@ -1,3 +1,11 @@
 .wrapper {
-  @apply w-[55vw] h-[60vh] bg-black fixed z-10;
+  @apply w-[55vw] h-[65vh] bg-white fixed z-10 flex flex-col items-center  justify-center;
+}
+
+.image {
+  background-image: url(/Media/wave.png);
+  background-size: contain;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  @apply w-[30vh] h-[40vh];
 }

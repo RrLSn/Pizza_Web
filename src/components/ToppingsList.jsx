@@ -15,8 +15,6 @@ const ToppingsList = (props) => {
     setIsHovered(false);
   };
 
-  // const handleClick = () => {};
-
   return (
     <div className="flex my-4 px-5 justify-between cursor-pointer">
       <span className="w-[max-content] flex gap-y-2">
@@ -28,15 +26,15 @@ const ToppingsList = (props) => {
           priority
           className={isHovered ? "block" : "hidden"}
         />
-        <p
-          className="hover:text-[#daa23b]"
+        <div
+          className="w-[23vw] hover:text-[#daa23b] flex justify-between"
           onMouseEnter={handleHover}
           onMouseLeave={handleHoverLeave}
         >
-          {topping}
-        </p>
+          <p>{topping}</p>
+          <p>${price}</p>
+        </div>
       </span>
-      <p>${price}</p>
     </div>
   );
 };

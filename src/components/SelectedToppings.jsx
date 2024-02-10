@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/styles/Toppings.module.css";
 import { Toppings } from "@/data";
 import ToppingsList from "@/components/ToppingsList";
@@ -8,6 +8,7 @@ import Link from "next/link";
 const SelectedToppings = () => {
   const [selectedToppings, setSelectedToppings] = useState([]);
   const [isSelected, setIsSelected] = useState(false);
+
   const isSessionStorageAvailable =
     typeof window !== "undefined" && window.sessionStorage;
   if (isSessionStorageAvailable) {
@@ -16,17 +17,19 @@ const SelectedToppings = () => {
   }
 
   const selectedBase = isSessionStorageAvailable
-    ? JSON.parse(sessionStorage.getItem("selectedBase"))
+    ? JSON.parse(sessionStorage.getItem("SelectedBase"))
     : null;
-  // isSessionStorage
-  //   ? sessionStorage.setItem("selectedItems", JSON.stringify(selectedToppings))
-  //   : false;
-  // isSessionStorage
-  //   ? sessionStorage.setItem("isSelected", JSON.stringify(isSelected))
-  //   : false;
-  // const selectedBase = isSessionStorage
-  //   ? JSON.parse(sessionStorage.getItem("SelectedBase"))
-  //   : null;
+
+  // useEffect(() => {
+  //   const isSessionStorageAvailable =
+  //     typeof window !== "undefined" && window.sessionStorage;
+  //   if (isSessionStorageAvailable) {
+  //     sessionStorage.setItem("selectedItems", JSON.stringify(selectedToppings));
+  //     sessionStorage.setItem("isSelected", JSON.stringify(isSelected));
+  //   }
+  // }, [selectedToppings, isSelected]);
+
+  // const selectedBase = sessionStorage.getItem("SelectedBase");
 
   const handleListClicked = (list) => {
     setIsSelected(true);
