@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "@/styles/Conatact.module.css";
-import Image from "next/image";
 
 const page = () => {
   return (
@@ -57,9 +56,9 @@ const page = () => {
               placeholder="Message"
             ></textarea>
           </div>
-          <div className={styles.button}>
-            <button>SEND MESSAGE</button>
-          </div>
+          {/* <div className={styles.button}> */}
+          <button className={styles.button}>SEND MESSAGE</button>
+          {/* </div> */}
         </div>
       </main>
     </div>

@@ -32,7 +32,7 @@
 }
 
 .contactInfo {
-  @apply min-w-[50%] h-[max-content];
+  @apply min-w-[50%] h-[max-content] lg:mt-0 mt-6;
 }
 
 .form {
@@ -47,10 +47,10 @@
   @apply h-[30vh] w-[100%] placeholder:text-[#fab940] px-3 text-[#ffffff] font-semibold border-none outline-none bg-[#242424] py-4 resize-none;
 }
 
-.button {
+/* .button {
   @apply w-[100%] h-[5rem] flex justify-center;
-}
+} */
 
-.button button {
-  @apply w-[25vh] h-[7vh] bg-[#fab940] font-bold;
+.button {
+  @apply lg:w-[13rem] w-[9rem] h-[3rem] bg-[#fab940] font-bold flex items-center justify-center m-auto text-[0.7rem] lg:text-[1rem];
 }

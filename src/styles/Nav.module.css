@@ -1,14 +1,22 @@
 .nav {
   background: url(/Media/Nav_bg.jpg);
-  @apply lg:w-[25vw] w-[35vw] h-[100vh] text-[#fdf6eb] flex flex-col justify-center items-center;
+  @apply lg:w-[25vw] w-[35vw] h-[100vh] text-[#fdf6eb] lg:flex flex-col justify-center items-center hidden;
 }
+
+/* .menuIcon {
+  @apply w-[3rem] h-[1.7rem] flex flex-col justify-between;
+}
+
+.menuIcon p {
+  @apply w-[3rem] h-[0.3rem] bg-[#fab940];
+} */
 
 .logo {
   background: url(/svgs/pizza-pie.svg);
   background-size: contain;
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  @apply lg:w-[10.5rem] w-[8rem] lg:h-[10.5rem] h-[8rem] rounded-full relative z-10 flex justify-center items-center;
+  @apply lg:w-[10.5rem] w-[8rem] lg:h-[10.5rem] h-[8rem] rounded-full relative z-10 flex justify-center items-center m-auto;
 }
 
 .main {

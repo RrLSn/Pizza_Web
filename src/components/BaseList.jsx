@@ -17,7 +17,7 @@ const BaseList = (props) => {
   };
 
   return (
-    <div className="lg:w-[16vw] w-[28vw] font-bold h-[max-content] text-center">
+    <div className="lg:w-[16vw] w-[30vw] font-bold h-[max-content] text-center m-auto mb-5">
       <Image src={imgUrl} width={200} height={30} alt="Pizza" priority />
       <Link
         href={`/Toppings`}
