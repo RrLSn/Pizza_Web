@@ -6,7 +6,7 @@
   background: url(/Media/slider2.webp);
   background-size: cover;
   /* background-position: 100% 100%; */
-  @apply w-full h-[13rem] flex items-end pl-6;
+  @apply w-full lg:h-[13rem] h-[10rem] flex items-end pl-6;
 }
 
 .image {

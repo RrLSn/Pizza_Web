@@ -16,26 +16,26 @@ const ToppingsList = (props) => {
   };
 
   return (
-    <div className="flex my-4 px-5 justify-between cursor-pointer">
-      <span className="w-[max-content] flex gap-y-2">
-        <Image
-          src="/svgs/arrow-right-line.svg"
-          height={30}
-          width={10}
-          alt="sign"
-          priority
-          className={isHovered ? "block" : "hidden"}
-        />
-        <div
-          className="w-[23vw] hover:text-[#daa23b] flex justify-between"
-          onMouseEnter={handleHover}
-          onMouseLeave={handleHoverLeave}
-        >
-          <p>{topping}</p>
-          <p>${price}</p>
-        </div>
-      </span>
-    </div>
+    // <div className="flex lg:my-4 lg:px-5 justify-between cursor-pointer">
+    <span className="w-[max-content] flex cursor-pointer my-2">
+      <Image
+        src="/svgs/arrow-right-line.svg"
+        height={30}
+        width={10}
+        alt="sign"
+        priority
+        className={isHovered ? "lg:block" : "hidden"}
+      />
+      <div
+        className="lg:w-[23vw] w-[46vw] hover:text-[#daa23b] flex justify-between"
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHoverLeave}
+      >
+        <p>{topping}</p>
+        <p>${price}</p>
+      </div>
+    </span>
+    // </div>
   );
 };
 

@@ -40,7 +40,7 @@ const Order = () => {
             </div>
           </div>
         ) : (
-          <p className="text-2xl font-bold text-[#daa23b]">
+          <p className="lg:text-2xl font-bold text-[#daa23b]">
             No Toppings, kindly go back to the previous page to select a
             Toppings
           </p>

@@ -7,7 +7,7 @@ import { BaseListDatas } from "@/data";
 const page = () => {
   return (
     <div className={styles.wrapper}>
-      <section className="w-[50vw] lg:h-[max-content] h-[35rem] lg:flex flex-wrap gap-7 justify-center items-center py-10 bg-[#fcf6ec]">
+      <section className="lg:w-[50vw] w-[70vw] h-[max-content] lg:flex flex-wrap gap-7 justify-center items-center py-10 bg-[#fcf6ec]">
         {BaseListDatas.map((data, index) => (
           <div key={data.id}>
             <BaseList

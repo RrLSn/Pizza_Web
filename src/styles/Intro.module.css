@@ -4,11 +4,11 @@
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  @apply lg:w-full w-[80vw] h-[100vh] text-[#fcf6ec] flex flex-col justify-center items-center;
+  @apply lg:w-full w-full h-[100vh] text-[#fcf6ec] flex flex-col justify-center items-center;
 }
 
 .main {
-  @apply w-[35rem] lg:text-6xl text-3xl font-bold flex flex-col lg:ml-0 ml-[15rem];
+  @apply w-[35rem] lg:text-6xl text-4xl font-bold flex flex-col lg:ml-0 ml-[15rem];
 }
 
 .pizza {

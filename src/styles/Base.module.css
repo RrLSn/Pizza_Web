@@ -12,5 +12,5 @@
 }
 
 .base {
-  @apply my-10;
+  @apply lg:my-10 my-3;
 }

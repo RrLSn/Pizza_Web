@@ -43,12 +43,12 @@ const SelectedToppings = () => {
   };
   return (
     <section className={styles.mainSection}>
-      <h1 className="underline underline-offset-4 text-3xl font-bold pb-2 text-[#fab940]">
+      <h1 className="underline underline-offset-4 lg:text-3xl font-bold pb-2 text-[#fab940]">
         Add Toppings for {selectedBase}
       </h1>
       <h2></h2>
 
-      <main className="w-[25vw] h-[max-content]">
+      <main className="lg:w-[25vw] w-[53vw] h-[max-content] my-4">
         <ul>
           {Toppings.map((list, index) => (
             <li key={index} onClick={() => handleListClicked(list.name)}>
@@ -62,7 +62,7 @@ const SelectedToppings = () => {
         </ul>
       </main>
 
-      <button className="w-[8rem] h-[3rem] m-auto border rounded-full mt-4 text-[#fab940] border-[#fab940] hover:border-[#daa23b] hover:text-[#daa23b]">
+      <button className="lg:w-[8rem] w-[4rem] lg:h-[3rem] h-[2rem] m-auto border rounded-full lg:mt-4 mt-2 text-[#fab940] border-[#fab940] hover:border-[#daa23b] hover:text-[#daa23b]">
         <Link
           href={{
             pathname: "/Confirmation",

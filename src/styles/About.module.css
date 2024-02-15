@@ -16,7 +16,7 @@
 }
 
 .main {
-  @apply w-[60vw] h-[80%] bg-[#fcf6ec] lg:py-16 px-5 lg:px-16 overflow-y-scroll;
+  @apply lg:w-[60vw] w-[90vw] h-[80%] bg-[#fcf6ec] lg:py-16 px-5 lg:px-16 overflow-y-scroll;
 }
 
 .main section h1 {

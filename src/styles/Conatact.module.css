@@ -10,7 +10,7 @@
 }
 
 .main {
-  @apply w-[60vw] h-[80%] bg-[#fcf6ec] lg:flex justify-between lg:py-10 py-5 lg:px-10 px-5 overflow-y-scroll;
+  @apply lg:w-[60vw] w-[90vw] h-[80%] bg-[#fcf6ec] lg:flex justify-between lg:py-10 py-5 lg:px-10 px-5 overflow-y-scroll;
 }
 
 .main h1 {
