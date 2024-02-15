@@ -56,6 +56,5 @@ The CSS for the page is structured as follows:
   display: flex;
   flex-direction: column;
   justify-
-
-Open [PIZZA-WEB](https://pizza-web-six.vercel.app/) with your browser to see the result.
 ```
+Open [PIZZA-WEB](https://pizza-web-six.vercel.app/) with your browser to see the result.
