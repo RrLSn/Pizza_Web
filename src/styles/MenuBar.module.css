@@ -1,0 +1,7 @@
+.wrapper {
+  @apply w-[2rem] h-[2rem] bg-black lg:hidden flex flex-col absolute z-20 my-2 mx-2 justify-between items-center py-1.5;
+}
+
+.wrapper p {
+  @apply w-[1.5rem] h-[0.2rem] bg-[#fab940];
+}

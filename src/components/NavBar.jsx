@@ -1,10 +1,14 @@
 import React from "react";
 import styles from "@/styles/Nav.module.css";
 import Link from "next/link";
+import MenuBar from "./MenuBar";
 
 const NavBar = () => {
   return (
     <nav className={styles.nav}>
+      <div className="w-full flex justify-end">
+        <MenuBar />
+      </div>
       <section>
         <div className={styles.logo}>
           <div className="absolute z-20 lg:w-[10vw] w-[30vw] h-[4vh] bg-[#fab940] flex text-center justify-center items-center font-bold lg:text-2xl text-black">

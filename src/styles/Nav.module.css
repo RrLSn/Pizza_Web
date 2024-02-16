@@ -3,14 +3,6 @@
   @apply lg:w-[25vw] w-[35vw] h-[100vh] text-[#fdf6eb] lg:flex flex-col justify-center items-center hidden;
 }
 
-/* .menuIcon {
-  @apply w-[3rem] h-[1.7rem] flex flex-col justify-between;
-}
-
-.menuIcon p {
-  @apply w-[3rem] h-[0.3rem] bg-[#fab940];
-} */
-
 .logo {
   background: url(/svgs/pizza-pie.svg);
   background-size: contain;
