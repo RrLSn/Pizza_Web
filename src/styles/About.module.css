@@ -12,19 +12,11 @@
 }
 
 .pizza {
-<<<<<<< HEAD
   @apply lg:w-[max-content] w-[max-content] lg:h-[10vh] h-[5vh] bg-[#242424] flex items-center lg:text-4xl text-[#fdf6eb] lg:gap-x-6 gap-x-2 lg:ml-8 ml-4 pr-4;
 }
 
 .main {
   @apply lg:w-[60vw] w-[90vw] h-[75%] bg-[#fcf6ec] lg:py-16 px-5 lg:px-16 overflow-y-scroll;
-=======
-  @apply lg:w-[19vw] w-[35vw] lg:h-[10vh] h-[5vh] bg-[#242424] flex items-center lg:text-4xl text-[#fdf6eb] lg:gap-x-6 gap-x-2 lg:ml-8 ml-4;
-}
-
-.main {
-  @apply lg:w-[60vw] w-[90vw] h-[80%] bg-[#fcf6ec] lg:py-16 px-5 lg:px-16 overflow-y-scroll;
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
 }
 
 .main section h1 {

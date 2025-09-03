@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import Link from "next/link";
 import React from "react";
@@ -16,22 +15,6 @@ const page = () => {
         </div>
         <h1>in Town</h1>
         <Link href="/Base" className=" w-[10rem] h-12 rounded-full text-[24px] flex justify-center items-center cursor-pointer hover:text-[#fab940] bg-black">Order Now</Link>
-=======
-import React from "react";
-import Link from "next/link";
-import styles from "@/styles/Intro.module.css";
-
-const page = () => {
-  return (
-    <div className={styles.wrapper}>
-      <div className={styles.main}>
-        <h1>Welcome,</h1>
-        <h1>we offer the Best</h1>
-        <div className={styles.pizza}>
-          <h1>Pizza</h1>
-        </div>
-        <h1>in Town</h1>
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
       </div>
     </div>
   );

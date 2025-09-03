@@ -4,11 +4,7 @@
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   @apply lg:w-full w-full h-[100vh] text-[#fcecfb] flex flex-col justify-center items-center relative z-10;
-=======
-  @apply lg:w-full w-full h-[100vh] text-[#fcf6ec] flex flex-col justify-center items-center relative z-10;
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
 }
 
 .main {

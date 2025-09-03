@@ -1,11 +1,7 @@
 import NavBar from "@/components/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-<<<<<<< HEAD
 import { StateProvider } from "@/contexts/Context";
-=======
-import MenuBar from "@/components/MenuBar";
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,16 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-<<<<<<< HEAD
         <StateProvider>
           <NavBar />
           {children}
         </StateProvider>
-=======
-        <MenuBar />
-        <NavBar />
-        {children}
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
       </body>
     </html>
   );

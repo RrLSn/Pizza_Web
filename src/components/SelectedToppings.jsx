@@ -20,20 +20,6 @@ const SelectedToppings = () => {
     ? JSON.parse(sessionStorage.getItem("SelectedBase"))
     : null;
 
-<<<<<<< HEAD
-=======
-  // useEffect(() => {
-  //   const isSessionStorageAvailable =
-  //     typeof window !== "undefined" && window.sessionStorage;
-  //   if (isSessionStorageAvailable) {
-  //     sessionStorage.setItem("selectedItems", JSON.stringify(selectedToppings));
-  //     sessionStorage.setItem("isSelected", JSON.stringify(isSelected));
-  //   }
-  // }, [selectedToppings, isSelected]);
-
-  // const selectedBase = sessionStorage.getItem("SelectedBase");
-
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
   const handleListClicked = (list) => {
     setIsSelected(true);
     if (selectedToppings.includes(list)) {
@@ -51,24 +37,14 @@ const SelectedToppings = () => {
       </h1>
       <h2></h2>
 
-<<<<<<< HEAD
       <main className="lg:w-[40vw] xl:w-[25vw] w-[53vw] h-[max-content] ">
         <ul className="w-[full] h-[max-content] my-4 flex flex-col gap-6">
-=======
-      <main className="lg:w-[25vw] w-[53vw] h-[max-content] my-4">
-        <ul>
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
           {Toppings.map((list, index) => (
             <li key={index} onClick={() => handleListClicked(list.name)}>
               <ToppingsList
                 topping={list.name}
-<<<<<<< HEAD
                 price={list.price}
                 isSelected={selectedToppings.includes(list.name)}
-=======
-                params={list.id}
-                price={list.price}
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
               />
             </li>
           ))}

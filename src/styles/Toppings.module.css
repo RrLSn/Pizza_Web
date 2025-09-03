@@ -6,9 +6,5 @@
 }
 
 .mainSection {
-<<<<<<< HEAD
   @apply lg:w-[60vw] xl:w-[30vw] w-[70vw] h-[max-content] min-h-[70%] bg-[#fdf6eb] flex flex-col justify-center items-center text-center py-10;
-=======
-  @apply lg:w-[45vw] w-[83vw] lg:h-[max-content] h-[70%] bg-[#fdf6eb] flex flex-col justify-center items-center text-center py-10;
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import React, { useState } from "react";
 import styles from "@/styles/Nav.module.css";
@@ -20,22 +19,6 @@ const NavBar = () => {
       <section className={`bg-[url('/Media/Nav_bg.jpg')] xl:w-[15vw] lg:w-[26vw] h-[100vh] text-[#fdf6eb] lg:flex xl:flex hidden flex-col justify-center items-center gap-5 ${!menuOpen && "flex"}`}>
         <div className={styles.logo}>
           <div className="absolute z-20 lg:w-[15vw] xl:w-[6vw] h-[4vh] bg-red-600 flex text-center justify-center items-center font-bold lg:text-2xl text-black">
-=======
-import React from "react";
-import styles from "@/styles/Nav.module.css";
-import Link from "next/link";
-import MenuBar from "./MenuBar";
-
-const NavBar = () => {
-  return (
-    <nav className={styles.nav}>
-      <div className="w-full flex justify-end">
-        <MenuBar />
-      </div>
-      <section>
-        <div className={styles.logo}>
-          <div className="absolute z-20 lg:w-[10vw] w-[30vw] h-[4vh] bg-[#fab940] flex text-center justify-center items-center font-bold lg:text-2xl text-black">
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
             PIZZA HOME
           </div>
         </div>
@@ -43,13 +26,7 @@ const NavBar = () => {
           <Link href="/Intro" className={styles.link}>
             HOME
           </Link>
-<<<<<<< HEAD
           
-=======
-          <Link href="/Menu" className={styles.link}>
-            MENU
-          </Link>
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
           <Link href="/Base" className={styles.link}>
             ORDER
           </Link>
@@ -60,7 +37,6 @@ const NavBar = () => {
             ABOUT US
           </Link>
         </div>
-<<<<<<< HEAD
       </section>
       {/* Sidebar: show when menuOpen is false */}
       <section className={`bg-[url('/Media/Nav_bg.jpg')] w-[40vw] h-[100vh] lg:hidden xl:hidden text-[#fdf6eb] flex-col justify-center items-center fixed top-0 left-0 z-20 transition-transform duration-300 ${!menuOpen ? "flex translate-x-0" : "hidden -translate-x-full"} lg:static lg:flex xl:flex`}>
@@ -91,16 +67,6 @@ const NavBar = () => {
           onClick={() => setMenuOpen(true)}
         ></div>
       )}
-=======
-        <footer className={styles.footer}>
-          <div className="lg:w-[15vw] w-[28vw] h-[0.5vh] bg-[#fab940]"></div>
-          <div>
-            <p></p>
-            <p></p>
-          </div>
-        </footer>
-      </section>
->>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
     </nav>
   );
 };
