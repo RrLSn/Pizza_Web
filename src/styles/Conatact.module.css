@@ -1,0 +1,56 @@
+.wrapper {
+  background: url(/Media/slider3.webp);
+  background-position: 100% 100%;
+  background-size: cover;
+  @apply w-full h-[100vh] flex flex-col justify-center;
+}
+
+.pizza {
+  @apply lg:w-[max-content] w-[max-content] lg:h-[10vh] h-[5vh] bg-[#242424] flex items-center lg:text-4xl text-[#fdf6eb] lg:gap-x-4 gap-x-2 lg:ml-8 ml-2 pr-4;
+}
+
+.main {
+  @apply lg:w-[60vw] w-[90vw] h-[77%] bg-[#fcf6ec] lg:flex justify-between lg:py-10 py-5 lg:px-10 px-5 overflow-y-scroll;
+}
+
+.main h1 {
+  @apply font-bold lg:text-2xl;
+}
+
+.image {
+  background-image: url(/svgs/pizza.svg);
+  background-size: cover;
+  @apply lg:w-[4rem] w-[1.7rem] lg:h-[4rem] h-[1.7rem];
+}
+
+.opnTime {
+  @apply flex;
+}
+
+.opnTime h2 {
+  @apply font-bold;
+}
+
+.contactInfo {
+  @apply min-w-[50%] h-[max-content] lg:mt-0 mt-6;
+}
+
+.form {
+  @apply w-[100%] h-[60vh] flex flex-col justify-between py-5;
+}
+
+.form input {
+  @apply w-[100%] text-[#ffffff] font-semibold border-none outline-none bg-[#242424] h-[5rem] placeholder:text-[#fab940] px-3;
+}
+
+.form textarea {
+  @apply h-[30vh] w-[100%] placeholder:text-[#fab940] px-3 text-[#ffffff] font-semibold border-none outline-none bg-[#242424] py-4 resize-none;
+}
+
+/* .button {
+  @apply w-[100%] h-[5rem] flex justify-center;
+} */
+
+.button {
+  @apply lg:w-[13rem] w-[9rem] h-[3rem] bg-[#fab940] font-bold flex items-center justify-center m-auto text-[0.7rem] lg:text-[1rem];
+}

@@ -1,0 +1,17 @@
+.logo {
+  background: url(/svgs/pizza-pie.svg);
+  width: auto;
+  height: auto;
+  background-size: contain;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  @apply lg:w-[10.5rem] w-[8rem] lg:h-[10.5rem] h-[8rem] rounded-full relative z-10 flex justify-center items-center;
+}
+
+.main {
+  @apply lg:w-[30vh] w-[40vw] h-[35vh] flex flex-col justify-center text-center items-center font-semibold lg:text-2xl gap-y-[0.50rem];
+}
+
+.link {
+  @apply focus:text-[#fab940] hover:underline hover:underline-offset-4 hover:text-[#fab940] focus:underline focus:underline-offset-4 active:underline active:underline-offset-4 active:text-[#fab940];
+}

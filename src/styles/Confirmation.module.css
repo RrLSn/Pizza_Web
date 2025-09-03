@@ -1,0 +1,22 @@
+.wrapper {
+  background: url(/Media/slider1.webp);
+  background-position: 100% 100%;
+  background-size: cover;
+  @apply w-full h-[100vh] text-center py-32 flex flex-col justify-center items-center;
+}
+
+.wrapper h1 {
+  @apply text-3xl font-bold my-2 tracking-wider;
+}
+
+.mainSection {
+  @apply lg:w-[55vw] w-[70vw] h-[max-content] bg-[#fdf6eb] flex flex-col justify-center items-center text-center py-10 px-10;
+}
+
+.order h2 {
+  @apply my-2 font-bold;
+}
+
+.wrapper button {
+  @apply lg:w-[max-content] w-[30vw] lg:h-[5vh] h-[7vh] py-2 px-4 rounded-full border my-5 border-[#fab940] text-[#fab940] hover:border-[#daa23b] hover:text-[#daa23b] cursor-pointer;
+}

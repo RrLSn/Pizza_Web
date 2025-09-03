@@ -1,0 +1,28 @@
+.wrapper {
+  background: url(/Media/slider2.webp);
+  background-position: 100% 100%;
+  background-size: cover;
+  @apply w-full h-[100vh] flex flex-col justify-center;
+}
+
+.image {
+  background-image: url(/svgs/pizza.svg);
+  background-size: cover;
+  @apply lg:w-[4rem] w-[1.7rem] lg:h-[4rem] h-[1.7rem];
+}
+
+.pizza {
+  @apply lg:w-[max-content] w-[max-content] lg:h-[10vh] h-[5vh] bg-[#242424] flex items-center lg:text-4xl text-[#fdf6eb] lg:gap-x-6 gap-x-2 lg:ml-8 ml-4 pr-4;
+}
+
+.main {
+  @apply lg:w-[60vw] w-[90vw] h-[75%] bg-[#fcf6ec] lg:py-16 px-5 lg:px-16 overflow-y-scroll;
+}
+
+.main section h1 {
+  @apply lg:text-3xl text-2xl font-bold my-4;
+}
+
+.imaage {
+  @apply m-auto mb-[4rem] mt-[2rem];
+}

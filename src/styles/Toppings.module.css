@@ -1,0 +1,10 @@
+.wrapper {
+  background: url(/Media/slider3.webp);
+  background-position: 100% 100%;
+  background-size: cover;
+  @apply w-full h-[100vh] text-black flex flex-col justify-center items-center text-center;
+}
+
+.mainSection {
+  @apply lg:w-[60vw] xl:w-[30vw] w-[70vw] h-[max-content] min-h-[70%] bg-[#fdf6eb] flex flex-col justify-center items-center text-center py-10;
+}
