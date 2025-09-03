@@ -1,5 +1,9 @@
 .wrapper {
+<<<<<<< HEAD
   @apply lg:w-[55vw] w-[73vw] lg:h-[65vh] h-[70vh] bg-[#fdf6eb] fixed z-10 flex flex-col items-center  justify-center px-6;
+=======
+  @apply lg:w-[55vw] w-[73vw] lg:h-[65vh] h-[70vh] bg-[#fdf6eb] fixed z-10 flex flex-col items-center  justify-center;
+>>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
 }
 
 .image {
@@ -7,5 +11,9 @@
   background-size: contain;
   background-position: 100% 100%;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   @apply lg:w-[25vw] w-[30vw] xl:w-[10vw] h-[40vh];
+=======
+  @apply w-[30vh] h-[40vh];
+>>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
 }

@@ -73,3 +73,10 @@ export const Toppings = [
     price: "0.10",
   },
 ];
+<<<<<<< HEAD
+=======
+
+const prices = Toppings.map((topping) => topping.price);
+
+console.log(prices);
+>>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878

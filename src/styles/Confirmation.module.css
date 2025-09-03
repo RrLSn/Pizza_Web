@@ -18,5 +18,9 @@
 }
 
 .wrapper button {
+<<<<<<< HEAD
   @apply lg:w-[max-content] w-[30vw] lg:h-[5vh] h-[7vh] py-2 px-4 rounded-full border my-5 border-[#fab940] text-[#fab940] hover:border-[#daa23b] hover:text-[#daa23b] cursor-pointer;
+=======
+  @apply lg:w-[8vw] w-[30vw] lg:h-[5vh] h-[7vh] rounded-full border my-5 border-[#fab940] text-[#fab940] hover:border-[#daa23b] hover:text-[#daa23b] cursor-pointer;
+>>>>>>> e51c4ecbd6e5205aac59e0f31e5466f64b4ac878
 }
