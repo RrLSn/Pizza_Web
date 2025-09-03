@@ -7,7 +7,7 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(true);
   
   return (
-    <nav className="w-[max-content] h-[max-content]">
+    <nav className={`w-[max-content] h-[max-content] bg-[url('/Media/Nav_bg.jpg')] bg-black`}>
       <button 
         className={`w-20 h-22 ml-4 p-2 flex flex-col justify-center items-center gap-2 lg:hidden xl:hidden absolute top-4 left-0 z-30 ${!menuOpen && "mt-6"}`} 
         onClick={() => setMenuOpen(!menuOpen)}
@@ -16,7 +16,7 @@ const NavBar = () => {
           <span className={`w-12 h-[10px] bg-black ${!menuOpen && "absolute left-1/2 top-1/2 block -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white"}`}></span>
           <span className={`w-12 h-[10px] bg-black ${!menuOpen && "hidden"}`}></span>
       </button>
-      <section className={`bg-[url('/Media/Nav_bg.jpg')] xl:w-[15vw] lg:w-[26vw] h-[100vh] text-[#fdf6eb] lg:flex xl:flex hidden flex-col justify-center items-center gap-5 ${!menuOpen && "flex"}`}>
+      <section className={`xl:w-[15vw] lg:w-[26vw] h-[100vh] text-[#fdf6eb] lg:flex xl:flex hidden flex-col justify-center items-center gap-5 ${!menuOpen && "flex"}`}>
         <div className={styles.logo}>
           <div className="absolute z-20 lg:w-[15vw] xl:w-[6vw] h-[4vh] bg-red-600 flex text-center justify-center items-center font-bold lg:text-2xl text-black">
             PIZZA HOME
